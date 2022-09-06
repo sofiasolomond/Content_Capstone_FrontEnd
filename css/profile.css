@@ -1,0 +1,40 @@
+.profileCard {
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    padding: 20px, 20px;
+    margin : auto;
+    font-size: large;
+    color: rgb(107, 12, 222);
+}
+.profilebutton {
+    padding: 20px, 20px;
+    margin : auto;
+    color: rgb(107, 12, 222);
+    align-items: center;
+    font-size: large;
+}
+
+.interest-placeholder {
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.changepassordform {
+    margin :70px;
+    color: rgb(107, 12, 222);
+    align-items: center;
+    font-size: large;
+}
+
+.form-group {
+ padding: 20px;
+}
+
+label, input {
+    font-size: large;
+    padding: 10px, 10px;
+}

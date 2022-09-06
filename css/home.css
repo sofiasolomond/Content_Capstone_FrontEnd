@@ -1,0 +1,165 @@
+body {
+    background: #ffffff;
+    background-image: url(../Images/Background.jpeg);
+    background-size: cover;
+}
+
+#header {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    background: rgba(0, 4, 53, 0.878);
+    z-index: 1;
+    background-image: url(../Images/header.jpeg);
+    background-blend-mode: multiply;
+}
+
+#header h1 {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0px;
+}
+
+.username {
+    text-align: left;
+    color: rgba(228, 37, 12, 0.952);
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-decoration: underline;
+    font-style: italic;
+    padding: 20px;
+}
+
+
+.logout {
+    color: #ffe100;
+    background-color: #ffe100;
+    text-align: center;
+    padding: 4px 8px;
+    margin: 0px 16px 0px 0px;
+    float: right;
+    border: solid 2px #ffe100;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+.logout:hover {
+    color: #ffe100;
+    background-color: #ffe100;
+    border: solid 2px #ffe100;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.search i {
+    font-size: 18px;
+    margin: 0px 4px 0px 16px;
+    border: 1px solid #ffe100;
+    padding: 8px 16px;
+    color: #ffe100;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.search i:active {
+    color: rgb(0, 23, 123);
+    background: #ffffff;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 600px;
+}
+
+.menu-items {
+    width: 15%;
+    padding-top: 30px;
+}
+
+.menu-items a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #001051;
+    font-weight: 300;
+}
+
+.menu-items a:hover {
+    background: rgb(0, 7, 84);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    background-size: contain;
+}
+
+.right-cloumn,
+.right-cloumn-bottom {
+    width: 22%;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000e46;
+    font-weight: 300;
+}
+
+.center-column {
+    width: 47%;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000e46;
+    font-weight: 300;
+}
+
+.title {
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(13, 14, 14);
+}
+
+.author {
+    font-family: sans-serif;
+    color: rgb(255, 0, 0);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+    display: inline;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.btn {
+    margin: 5px 16px;
+    padding: 10px, 10px;
+    background-color: ffe100;
+    font-weight: bold;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login </title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body class="background">
+  
+  <div class="wrapper">
+    <header>Login</header>
+    <form>
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Email Address / Username" name="username" id="uname">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Email can't be blank</div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" placeholder="Password" name="password" id="pwd">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Password can't be blank</div>
+      </div>
+      <div class="pass-txt"><a href="forgot-password.html">Forgot password?</a></div>
+      <button type="submit" onclick="HandleLogin()">Login</button>
+    </form>
+    <div class="auth">
+      <span>Or login with</span>
+    </div>
+    <!--<a href="#" class="fa fa-facebook"> </a>
+    <a href="#" class="fa fa-google"></a>  
+    <a href="#" class="fa fa-linkedin"></a>-->
+    <div class="social">
+      <div class="facebook">
+        <span> <i class="fa fa-facebook"> </i></span>
+      </div>
+      <div class="google">
+        <span> <i class="fa fa-google"></i></span></a>
+      </div>
+      <div class="linkedin">
+        <span> <i class="fa fa-linkedin"></i></span></a>
+      </div>
+    </div>
+    <div class="links">
+      <div class="sign-txt">
+        <div>
+          Not yet member? <a href="signup.html">Signup now</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

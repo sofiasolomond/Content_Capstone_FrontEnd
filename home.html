@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+  <title>GL Capstone Content Website</title>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/profile.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload=loadfunction()>
+  <div id="header">
+    <h1>CapStone App</h1>
+    <div class="search">
+      <i class="fa fa-search"> Search for articles</i>
+      <span class="logout">
+        <a class="fa fa-sign-out" href="index.html"></a>
+      </span>
+    </div>
+  </div>
+  <div class="column menu-items">
+    <div class="username">Welcome Akshay1999! </div>
+    <span><a href='#' onClick=display_premium_articles()>Home</a></span>
+    <span class='sub-menu'><a href='#' style="display: inline">My Account </a>
+      <div class='fa fa-caret-down right'></div>
+      <div>
+        <span><a href='#' onClick=display_profile_details(1)>View Profile</a></span>
+        <span><a href='#' onClick=change_password()>Change password</a></span>
+      </div>
+    </span>
+    <span> <a href="#" onClick=displayMyStories()>My Stories</a>
+    </span>
+
+
+    <span> <a href="#" onClick=displayMyFavorites()>My Favourites</a></span>
+    <span><a href="index.html">Logout</a></span>
+  </div>
+  <div class="column center-column">
+    <h2 id="center-column-header">Premium Articles</h2>
+    <div id="center-column"></div>
+  </div>
+  <div class="column right-cloumn">
+    <h2 id=right-column-header>Trending Now <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+    </h2>
+    <div id="right-cloumn"></div>
+    <h2 id=right-column-bottom-header>Explore more Interests</h2>
+    <div id="right-cloumn-bottom"> </div>
+  </div>
+  <script src="js/article.js"></script>
+  <script src="js/profile.js"></script>
+
+  <script>
+    $('.sub-menu div').hide();
+    $(".sub-menu a").click(function () {
+      $(this).parent(".sub-menu").children("div").slideToggle("50");
+      $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+    });
+  </script>
+  </div>
+</body>
+
+</html>
